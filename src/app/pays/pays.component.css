@@ -1,0 +1,8 @@
+label{
+    margin : 5px;
+}
+
+.listePays{
+    border: 1px solid black;
+    list-style: none;
+}

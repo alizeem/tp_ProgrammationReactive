@@ -1,0 +1,10 @@
+<div>
+    <label>Pays</label>
+    <input id="pays"type="text" #input  (blur)="cacherListe()" (focus)="filtrerPays()">
+
+    <ul class="listePays" *ngIf="paysCourant.length != 0">
+        <li *ngFor="let pays of paysCourant" (click)="selectPays(pays)">
+            {{ pays.nomPays }}
+        </li>
+    </ul>
+</div>
